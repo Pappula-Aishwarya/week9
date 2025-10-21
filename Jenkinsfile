@@ -5,21 +5,21 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 echo "Building Docker image..."
-                bat 'docker build -t kowdesindhuja/sample:latest .'
+                bat 'docker build -t aishwarya956/week8_doc_repo:t1 .'
             }
         }
 
         stage('Docker Login') {
             steps {
                 echo "Logging in to Docker Hub..."
-                bat 'docker login -u kowdesindhuja -p 123456789'
+                bat 'docker login -u Aishwarya -p aishu2005*'
             }
         }
 
         stage('Push Docker Image') {
             steps {
                 echo "Pushing Docker image to Docker Hub..."
-                bat 'docker push kowdesindhuja/sample:latest'
+                bat 'docker push aishwarya956/week8_doc_repo:t1'
             }
         }
 
