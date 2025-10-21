@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: kubedemoapp
-          image: kowdesindhuja/sample:latest
+          image: aishwarya956/week8_doc_repo:t1
           ports:
             - containerPort: 5000
